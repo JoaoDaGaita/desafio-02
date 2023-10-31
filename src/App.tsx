@@ -1,11 +1,11 @@
-import './App.css'
+import "./index.css"
 
-function App() {
+export function App() {
   return (
     <>
-      <h1>Hello WOrld</h1>
+      <h1 className='text-red-500'>ZAM</h1>
     </>
   )
 }
 
-export default App
+
