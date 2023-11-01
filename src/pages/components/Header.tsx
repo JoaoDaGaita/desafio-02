@@ -1,5 +1,6 @@
-import { Items } from './Items'
+import { Item } from './Item'
 import homeImage from '../../assets/homeImage.svg'
+import cartIcon from '../../assets/cartIcon.svg'
 
 export function Header() {
   return (
@@ -12,7 +13,16 @@ export function Header() {
           Com o Coffee Delivery você recebe seu café onde estiver, a qualquer
           hora
         </span>
-        <Items />
+        <Item
+          icon={cartIcon}
+          text="Compra simples e segura"
+          color="bg-product-yellowDark"
+        />
+        <Item
+          icon={cartIcon}
+          text="Compra simples e segura"
+          color="bg-product-yellow"
+        />
       </div>
       <img src={homeImage} alt="" className="float-right" />
     </div>
