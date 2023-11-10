@@ -1,13 +1,12 @@
 import { VariantProps, cva } from 'class-variance-authority'
 import { ComponentProps } from 'react'
-import cartLogo from '../assets/cartIcon.svg'
+import emptyCartyIcon from '../assets/emptyCartyIcon.svg'
 import { twMerge } from 'tailwind-merge'
 
 const cartStyles = cva(['transition-colors'], {
   variants: {
     variant: {
       default: ['bg-product-yellowLight'],
-      full: ['bg-product-yellowDark'],
     },
     size: {
       default: [
@@ -24,6 +23,7 @@ const cartStyles = cva(['transition-colors'], {
     },
     full: {
       default: [
+        'bg-product-yellowDark',
         'flex',
         'items-center',
         'justify-center',
@@ -39,6 +39,10 @@ const cartStyles = cva(['transition-colors'], {
       ],
     },
   },
+  defaultVariants: {
+    variant: 'default',
+    size: 'default',
+  },
 })
 
 type CartProps = VariantProps<typeof cartStyles> &
@@ -48,7 +52,7 @@ type CartProps = VariantProps<typeof cartStyles> &
 export function Cart({ variant, size, className, full, ...props }: CartProps) {
   return (
     <button className={twMerge(cartStyles({ variant, size }), className)}>
-      <img src={cartLogo} alt="" />
+      <img src={emptyCartyIcon} alt="" />
       {full && (
         <div className={twMerge(cartStyles({ full }), className)}>
           <span

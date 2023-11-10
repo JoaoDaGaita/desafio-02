@@ -27,6 +27,7 @@ export default {
       },
       fontFamily: {
         roboto: ['Roboto', 'sans-serif'],
+        Baloo2: ['Baloo 2'],
       },
     },
   },

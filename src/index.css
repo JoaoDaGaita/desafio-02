@@ -8,6 +8,6 @@
   }
   
   body {
-    @apply bg-base-background antialiased font-roboto
+    @apply bg-base-background antialiased font-roboto mx-40 px-40
   }
 }
