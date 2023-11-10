@@ -1,11 +1,12 @@
-import "./index.css"
+import { BrowserRouter } from 'react-router-dom'
+
+import './index.css'
+import { Router } from './Router'
 
 export function App() {
   return (
-    <>
-      <h1 className='text-red-500'>ZAM</h1>
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
-
-
