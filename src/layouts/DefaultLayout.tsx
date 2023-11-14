@@ -3,7 +3,7 @@ import { Navbar } from '../components/Navbar'
 
 export function DefaultLayout() {
   return (
-    <div>
+    <div className="flex w-full max-h-[2293px] flex-col items-start">
       <Navbar />
       <Outlet />
     </div>

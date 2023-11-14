@@ -20,6 +20,7 @@ const selectButtonStyles = cva(['transition-colors'], {
         'flex-1',
         'rounded-md',
         'bg-base-button',
+        'text-xs',
       ],
     },
   },
