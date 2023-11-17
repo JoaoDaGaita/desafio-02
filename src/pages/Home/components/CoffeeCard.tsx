@@ -5,12 +5,6 @@ import plusIcon from '../../../assets/plusIcon.svg'
 
 import { Button } from '../../../components/Button'
 
-// interface CoffeeProps {
-//   coffeName: string
-//   coffeType: string
-//   coffeeDescription: string
-// }
-
 export function CoffeeCard() {
   return (
     <div className="flex flex-col w-64 h-[310px] shrink-0 rounded-tl-sm items-center justify-center rounded-br-[36px] bg-base-card">

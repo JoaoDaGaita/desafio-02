@@ -7,16 +7,6 @@ import { CoffeeCard } from './CoffeeCard'
 //   coffeeImage: string
 // }
 
-// const coffees: CoffeeProps = [
-//   {
-//     coffeName: 'Expresso Tradicional',
-//     coffeType: 'Tradicional',
-//     coffeeDescription:
-//       'O tradicional café feito com água quente e grãos moídos',
-//     coffeeImage: '',
-//   },
-// ]
-
 export function CoffeeList() {
   return (
     <div className="flex w-full h-[1645px] pt-8 pb-[157px] flex-wrap items-start gap-[54px] flex-shrink-0">
